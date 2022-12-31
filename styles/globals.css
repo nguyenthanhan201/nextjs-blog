@@ -1,38 +1,30 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  padding: 0px 12px;
+  width: 100%;
+  height: 40px;
+  outline: none;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+input::placeholder {
+  font-weight: 600;
+  color: #333333;
 }
 
-* {
-  box-sizing: border-box;
+textarea {
+  resize: none;
+  outline: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.layout {
+  background: linear-gradient(138.11deg, #fef452 0%, #942f70 121.92%);
 }
 
-h1,
-h2,
-p,
-ul {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-button {
-  padding: 0.5rem 1rem;
-  font-weight: bold;
+.add-banner {
+  border: 2px dashed #ffffff;
+  border-bottom-left-radius: 99px;
+  border-top-right-radius: 99px;
 }
